@@ -37,7 +37,7 @@
 - (void)createThread {
     // connect/recv/send 等接口都是阻塞式的，因此我们需要将这些操作放在非 UI 线程中进行
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self loadDataWithUrl:[NSURL URLWithString:@"telnet://towel.blinkenlights.nl:23"]];
+        [self loadDataWithUrl:[NSURL URLWithString:@" "]];
         // 默认端口号 http 80  http 443
     });
 }
